@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+
+ <link rel="stylesheet" href="{% static 'student\static\css\bootstrap-grid.min.css' %}">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>User Registration</title>
+ <style>
+   table, th, tr, td {
+    border: 1px solid black
+   }
+  </style>
+ 
+
+</head>
+<body>
+   <table>
+      <h3>Student Data</h3>
+       <th>First Name</th>
+       <th>Middle Name</th>
+       <th>State</th>
+       <th>City</th>
+       <th>Gender</th>
+       {% for stu1 in studs %}
+       <tr>
+        <td>{{stu1.student_f_name}}</td>
+        <td>{{stu1.student_m_name}}</td>
+        <td>{{stu1.student_l_name}}</td>
+        <td>{{stu1.state}}</td>
+        <td>{{stu1.city}}</td>
+        <td>{{stu1.Gender}}</td>
+        
+       </tr> -->
+      {% endfor %} 
+     </table>      
+</body>
+</html>
